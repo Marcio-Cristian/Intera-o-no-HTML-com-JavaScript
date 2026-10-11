@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt"> <meta charset="UTF-8">
+<head> 
+    <title>Interação e Modificação via JavaScript</title>
+</head>
+<body>
+<div id="d1">Conteúdo Original</div>
+<button onClick="Alterar()">Clique Aqui</button>
+<script>
+    const Alterar = () => {
+        let d1 = document.getElementById("d1");
+        d1.innerHTML="Conteúdo Alterado";
+        d1.style.backgroundColor="red";
+    }
+</script>
+</body>
+</html>
